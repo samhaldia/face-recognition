@@ -1,6 +1,7 @@
 #Introduction
 
-This repository Uses OpenCV pre-trained Caffe deep learning model to recognize faces in Dynamically Created DataSet using Bing Search API
+This repository Uses OpenCV pre-trained Caffe deep learning model to recognize faces.
+Dynamically Creating DataSet of Images to label, using Bing Search API
 
 To Get BIng Search API Endpoints and API Key Follow below URLs to Register and fetch key:
 
@@ -29,7 +30,8 @@ python search_bing_api.py --query "Amir Khan" --output dataset/amirkhan
  
 Embedding data to a dictionary and then serialize the data  in a pickle file with available Datasets
  
-python extract_embeddings.py --dataset dataset --embeddings output/embeddings.pickle --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7
+python extract_embeddings.py --dataset dataset --embeddings output/embeddings.pickle --detector face_detection_model \
+ --embedding-model openface_nn4.small2.v1.t7
  
 Train Using  Linear Support Vector Machine model on top of embeddings
  
@@ -37,4 +39,5 @@ python train_model.py --embeddings output/embeddings.pickle --recognizer output/
  
 Test input images to detect faces:
  
-python recognize.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/recognizer.pickle --le output/le.pickle --image images/amir.jpg
+python recognize.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 \ 
+--recognizer output/recognizer.pickle --le output/le.pickle --image images/amir.jpg
