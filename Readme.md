@@ -23,7 +23,7 @@ Create Folder dataset/amirkhan
  
 Run the program 
  
-# Creates our Data set with below search query in provided path
+#Creates our Data set with below search query in provided path
 python search_bing_api.py --query "Amir Khan" --output dataset/amirkhan
  
 #Face Recognition Steps: 
