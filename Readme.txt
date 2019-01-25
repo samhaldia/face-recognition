@@ -1,4 +1,4 @@
-# Introduction
+#Introduction
 
 	This repository Uses OpenCV pre-trained Caffe deep learning model to recognize faces in Dynamically Created DataSet using Bing Search API
 
@@ -8,13 +8,13 @@
 
 	Once registered visit: https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/
 
-# Requiste Libraries:
+#Requiste Libraries:
 
 	pip install requests
 	pip install opencv-contrib-python
 	pip install scikit-learn
  
-# Steps to Proceed:
+#Steps to Proceed:
  
 	Create a file bing_search_image_api.python
  
@@ -25,7 +25,7 @@
 	# Creates our Data set with below search query in provided path
 	python search_bing_api.py --query "Amir Khan" --output dataset/amirkhan
  
- # Face Recognition Steps: 
+ #Face Recognition Steps: 
  
 	Embedding data to a dictionary and then serialize the data  in a pickle file with available Datasets
  
