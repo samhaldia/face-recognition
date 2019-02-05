@@ -24,7 +24,7 @@ args = vars(ap.parse_args())
 # maximum number of results for a given search and (2) the group size
 # for results (maximum of 50 per request)
 # Add your API Key
-API_KEY = "#########"
+API_KEY = "6748d40b903841428fdfd5e4d516730b"
 MAX_RESULTS = 250
 GROUP_SIZE = 50
 
